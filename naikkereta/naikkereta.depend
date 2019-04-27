@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1514140574 source:e:\telkom university adhit\kuliah\std\naikkereta\main.cpp
+	<iostream>
+
+1556387399 source:e:\telkom university adhit\kuliah\std\naikkereta\relasi.cpp
+
+1556390729 source:e:\telkom university adhit\kuliah\std\naikkereta\stasiun.cpp
+	"stasiun.h"
+
+1556388763 source:e:\telkom university adhit\kuliah\std\naikkereta\namakereta.cpp
+	"namakereta.h"
+
+1556388972 e:\telkom university adhit\kuliah\std\naikkereta\namakereta.h
+	<iostream>
+
+1556388101 e:\telkom university adhit\kuliah\std\naikkereta\stasiun.h
+	<iostream>
+
