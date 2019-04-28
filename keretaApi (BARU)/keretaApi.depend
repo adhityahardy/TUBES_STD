@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1556473741 source:e:\telkom university adhit\kuliah\std\keretaapi\main.cpp
+	<iostream>
+	"namakereta.h"
+	"parent.h"
+	"child.h"
+	"relasi.h"
+
+1556473928 source:e:\telkom university adhit\kuliah\std\keretaapi\namakereta.cpp
+	"namakereta.h"
+
+1556473042 source:e:\telkom university adhit\kuliah\std\keretaapi\parent.cpp
+	"parent.h"
+
+1556473410 source:e:\telkom university adhit\kuliah\std\keretaapi\relasi.cpp
+	"relasi.h"
+
+1556472668 source:e:\telkom university adhit\kuliah\std\keretaapi\child.cpp
+	"child.h"
+
+1556472636 e:\telkom university adhit\kuliah\std\keretaapi\child.h
+	<iostream>
+	<stdlib.h>
+
+1556473071 e:\telkom university adhit\kuliah\std\keretaapi\parent.h
+	<iostream>
+	<stdlib.h>
+
+1556473402 e:\telkom university adhit\kuliah\std\keretaapi\relasi.h
+	"relasi.h"
+	"child.h"
+	"parent.h"
+	<iostream>
+	<stdlib.h>
+
+1556473699 e:\telkom university adhit\kuliah\std\keretaapi\namakereta.h
+	<iostream>
+	"parent.h"
+	"child.h"
+	"relasi.h"
+
