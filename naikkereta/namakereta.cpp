@@ -4,7 +4,7 @@ void createList(List_namakereta &L){
     first(L) = NULL;
 }
 
-address_namakereta allokasi(infotype_namakereta X){
+address_namakereta alokasi(infotype_namakereta X){
     address_namakereta P = new elmlist_namakereta;
     info(P) = X;
     next(P) = NULL;
