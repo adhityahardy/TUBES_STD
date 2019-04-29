@@ -46,7 +46,7 @@
 	<iostream>
 	<stdlib.h>
 
-1556512852 source:e:\telkom university adhit\kuliah\std\keretaapi (baru)\main.cpp
+1556542014 source:e:\telkom university adhit\kuliah\std\keretaapi (baru)\main.cpp
 	<iostream>
 	"namakereta.h"
 	"parent.h"
@@ -64,17 +64,17 @@
 	<stdlib.h>
 	"relasi.h"
 
-1556510203 e:\telkom university adhit\kuliah\std\keretaapi (baru)\relasi.h
+1556540796 e:\telkom university adhit\kuliah\std\keretaapi (baru)\relasi.h
 	<iostream>
 	<stdlib.h>
 	"child.h"
 
-1556512214 source:e:\telkom university adhit\kuliah\std\keretaapi (baru)\namakereta.cpp
+1556540796 source:e:\telkom university adhit\kuliah\std\keretaapi (baru)\namakereta.cpp
 	"namakereta.h"
 
 1556510894 source:e:\telkom university adhit\kuliah\std\keretaapi (baru)\parent.cpp
 	"parent.h"
 
-1556510192 source:e:\telkom university adhit\kuliah\std\keretaapi (baru)\relasi.cpp
+1556540379 source:e:\telkom university adhit\kuliah\std\keretaapi (baru)\relasi.cpp
 	"relasi.h"
 

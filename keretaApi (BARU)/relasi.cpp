@@ -10,6 +10,10 @@ address_relasi alokasiRelasi(address_child C){
     return R;
 }
 
+void dealokasiRelasi(address_relasi R){
+    delete R;
+}
+
 void insertRelasi(List_relasi &L, address_relasi R){
         if(firstRelasi(L) != NULL){
             nextRelasi(R) = firstRelasi(L);
@@ -25,7 +29,7 @@ void deleteFirstRelasi(List_relasi &L, address_relasi &R){
     nextRelasi(R) = NULL;
 }
 
-void deleteAfterRelasi(address_relasi Prec, address_relasi &R){
+void deleteAfterRelasi(List_relasi &L, address_relasi Prec, address_relasi &R){
     if (Prec != NULL && nextRelasi(Prec) != NULL){
         R = nextRelasi(Prec);
         nextRelasi(Prec) = nextRelasi(R);
