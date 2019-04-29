@@ -5,7 +5,7 @@ void createListChild(List_child &L) {
     lastChild(L) = NULL;
 }
 
-address_child alokasiChild(int ID_Child,string nama_Child){
+address_child alokasiChild(int ID_Child, string nama_Child){
     address_child P = new elmlist_child;
     ID_Child(P) = ID_Child;
     nama_Child(P) = nama_Child;
@@ -19,7 +19,7 @@ void dealokasiChild(address_child &P){
 }
 
 void insertFirstChild(List_child &L, address_child P){
-    if(firstChild(L) == NULL && lastChild(L) == NULL){
+     if(firstChild(L) == NULL && lastChild(L) == NULL){
         firstChild(L) = P;
         lastChild(L) = P;
     } else {
@@ -28,7 +28,6 @@ void insertFirstChild(List_child &L, address_child P){
         firstChild(L) = P;
     }
 }
-
 void insertLastChild(List_child &L, address_child P){
     if(firstChild(L) == NULL && lastChild(L) == NULL){
         insertFirstChild(L,P);
@@ -39,7 +38,7 @@ void insertLastChild(List_child &L, address_child P){
     }
 }
 
-void insertAfter(List_child &L, address_child &Prec, address_child P){
+void insertAfterChild(List_child &L, address_child Prec, address_child P){
     prevChild(nextChild(Prec)) = P;
     nextChild(P) = nextChild(Prec);
     prevChild(P) = Prec;
@@ -48,28 +47,28 @@ void insertAfter(List_child &L, address_child &Prec, address_child P){
 
 void deleteFirstChild(List_child &L, address_child &P){
     if(firstChild(L) != NULL && lastChild(L) != NULL){
-        P = firstChild(L);
-            if(firstChild(L) != lastChild(L)){
-                firstChild(L) = nextChild(firstChild(L));
-                prevChild(firstChild(L)) = NULL;
-                nextChild(P) = NULL;
-            } else if(firstChild(L) == lastChild(L)){
-                dealokasiChild(P);
-            }
-        }
+      P = firstChild(L);
+        if(firstChild(L) != lastChild(L)){
+            firstChild(L) = nextChild(firstChild(L));
+            prevChild(firstChild(L)) = NULL;
+            nextChild(P) = NULL;
+      } else if(firstChild(L) == lastChild(L)){
+            dealokasiChild(P);
+      }
+    }
 }
 
 void deleteLastChild(List_child &L, address_child &P){
     if(firstChild(L) != NULL && lastChild(L) != NULL){
         P = lastChild(L);
-        if(firstChild(L) != lastChild(L)){
-            lastChild(L) = prevChild(P);
-            nextChild(prevChild(P)) = NULL;
-            prevChild(P) = NULL;
-        } else {
-            dealokasiChild(P);
+            if(firstChild(L) != lastChild(L)){
+                lastChild(L) = prevChild(P);
+                nextChild(prevChild(P)) = NULL;
+                prevChild(P) = NULL;
+            } else {
+                dealokasiChild(P);
+            }
         }
-    }
 }
 
 void deleteAfterChild(List_child &L, address_child Prec, address_child &P){
@@ -82,8 +81,7 @@ void deleteAfterChild(List_child &L, address_child Prec, address_child &P){
 
 address_child SearchIdChild(List_child L, int IDC){
     address_child P = firstChild(L);
-    while(P != NULL && ID_Child(P) != IDC)
-    {
+    while(P != NULL && ID_Child(P) != IDC){
         P = nextChild(P);
     }
     return P;

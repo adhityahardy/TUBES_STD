@@ -9,11 +9,11 @@ address_parent alokasiParent(int ID_Parent, string nama_Parent){
      address_parent P = new elmlist_parent;
      ID_Parent(P) = ID_Parent;
      nama_Parent(P) = nama_Parent;
+     createListRelasi(childList(P));
      nextParent(P) = NULL;
      prevParent(P) = NULL;
      return P;
 }
-
 void dealokasiParent(address_parent &P){
     delete P;
 }
@@ -38,6 +38,7 @@ void insertLastParent(List_parent &L, address_parent P){
         lastParent(L) = P;
     }
 }
+
 void insertAfterParent(List_parent &L, address_parent Prec, address_parent P){
     if(firstParent(L) != NULL){
         nextParent(P) = nextParent(Prec);
@@ -46,29 +47,31 @@ void insertAfterParent(List_parent &L, address_parent Prec, address_parent P){
         prevParent(nextParent(P)) = P;
     }
 }
+
 void deleteFirstParent(List_parent &L,address_parent &P){
     if(firstParent(L) != NULL && lastParent(L) != NULL){
         P = firstParent(L);
-        if(firstParent(L) != lastParent(L)){
-            firstParent(L) = nextParent(firstParent(L));
-            prevParent(firstParent(L)) = NULL;
-            nextParent(P) = NULL;
-        } else if(firstParent(L) == lastParent(L)){
-          dealokasiParent(P);
+            if(firstParent(L) != lastParent(L)){
+                firstParent(L) = nextParent(firstParent(L));
+                prevParent(firstParent(L)) = NULL;
+                nextParent(P) = NULL;
+            } else if(firstParent(L) == lastParent(L)){
+                dealokasiParent(P);
+            }
         }
-    }
 }
+
 void deleteLastParent(List_parent &L, address_parent &P){
     if(firstParent(L) != NULL && lastParent(L) != NULL){
         P = lastParent(L);
-        if(firstParent(L) != lastParent(L)){
-            lastParent(L) = prevParent(P);
-            nextParent(prevParent(P)) = NULL;
-            prevParent(P) = NULL;
-        } else {
-            dealokasiParent(P);
+            if(firstParent(L) != lastParent(L)){
+                lastParent(L) = prevParent(P);
+                nextParent(prevParent(P)) = NULL;
+                prevParent(P) = NULL;
+            } else {
+                dealokasiParent(P);
+            }
         }
-    }
 }
 
 void deleteAfterParent(List_parent &L, address_parent Prec, address_parent &P){
@@ -78,6 +81,7 @@ void deleteAfterParent(List_parent &L, address_parent Prec, address_parent &P){
     prevParent(P) = NULL;
     nextParent(P) = NULL;
 }
+
 address_parent SearchIdParent(List_parent L, int IDP){
     address_parent P = firstParent(L);
     while(P != NULL && ID_Parent(P) != IDP){

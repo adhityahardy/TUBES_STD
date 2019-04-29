@@ -39,3 +39,42 @@
 	"child.h"
 	"relasi.h"
 
+1556511468 source:e:\telkom university adhit\kuliah\std\keretaapi (baru)\child.cpp
+	"child.h"
+
+1556510894 e:\telkom university adhit\kuliah\std\keretaapi (baru)\child.h
+	<iostream>
+	<stdlib.h>
+
+1556512178 source:e:\telkom university adhit\kuliah\std\keretaapi (baru)\main.cpp
+	<iostream>
+	"namakereta.h"
+	"parent.h"
+	"child.h"
+	"relasi.h"
+
+1556511599 e:\telkom university adhit\kuliah\std\keretaapi (baru)\namakereta.h
+	<iostream>
+	"parent.h"
+	"child.h"
+	"relasi.h"
+
+1556510680 e:\telkom university adhit\kuliah\std\keretaapi (baru)\parent.h
+	<iostream>
+	<stdlib.h>
+	"relasi.h"
+
+1556510203 e:\telkom university adhit\kuliah\std\keretaapi (baru)\relasi.h
+	<iostream>
+	<stdlib.h>
+	"child.h"
+
+1556512214 source:e:\telkom university adhit\kuliah\std\keretaapi (baru)\namakereta.cpp
+	"namakereta.h"
+
+1556510894 source:e:\telkom university adhit\kuliah\std\keretaapi (baru)\parent.cpp
+	"parent.h"
+
+1556510192 source:e:\telkom university adhit\kuliah\std\keretaapi (baru)\relasi.cpp
+	"relasi.h"
+

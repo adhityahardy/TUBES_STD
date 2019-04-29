@@ -30,12 +30,13 @@ struct List_child{
 void createListChild(List_child &L);
 void insertFirstChild(List_child &L, address_child P);
 void insertLastChild(List_child &L, address_child P);
-void insertAfterChild(address_child Prec, address_child P);
+void insertAfterChild(List_child &L,address_child Prec, address_child P);
 void deleteFirstChild(List_child &L, address_child &P);
 void deleteLastChild(List_child &L, address_child &P);
 void deleteAfterChild(List_child &L, address_child Prec, address_child &P);
-void dealokasi(address_child &P);
-address_child alokasiChild(int ID_Child, string namaChild);
+void dealokasiChild(address_child &P);
+address_child alokasiChild(int ID_Child, string nama_Child);
 address_child SearchIdChild(List_child L, int ID_Child);
+
 
 #endif // CHILD_H_INCLUDED
