@@ -101,3 +101,14 @@ bool checkConnection(List_parent P, List_child C,int IDP, int IDC){
     }
     return false;
 }
+
+void disconnect (List_parent &P, List_child C, int IDP, int IDC){
+}
+void printAll (List_parent P, List_child C){
+}
+void printChildOfParent (List_parent P, List_child C, int IDP){
+}
+void deleteChild (List_parent &P, List_child &C){
+}
+void deleteParent (List_parent &P){
+}
