@@ -117,3 +117,39 @@
 1556540379 source:e:\yang ke 2\keretaapi (baru)2\keretaapi (baru)\relasi.cpp
 	"relasi.h"
 
+1556651568 source:c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\child.cpp
+	"child.h"
+
+1556651568 c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\child.h
+	<iostream>
+	<stdlib.h>
+
+1556651787 source:c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\main.cpp
+	<iostream>
+	"namakereta.h"
+	"parent.h"
+	"child.h"
+	"relasi.h"
+
+1556651787 c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\namakereta.h
+	<iostream>
+	"parent.h"
+	"child.h"
+	"relasi.h"
+
+1556651568 c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\parent.h
+	<iostream>
+	<stdlib.h>
+	"relasi.h"
+
+1556651568 c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\relasi.h
+	<iostream>
+	<stdlib.h>
+	"child.h"
+
+1556651568 source:c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\parent.cpp
+	"parent.h"
+
+1556651568 source:c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\relasi.cpp
+	"relasi.h"
+

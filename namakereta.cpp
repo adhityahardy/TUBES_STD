@@ -279,7 +279,7 @@ void deleteChild(List_parent &P, List_child &C){
 //    }
 //    else {
 //        while (P != NULL) {
-//            if (maks < jumlahKereta(P, R)) {
+//            if (maks < jumlahKereta(P,R)) {
 //                maks = jumlahKereta(P,R);
 //                Q = P;
 //            }
@@ -297,7 +297,7 @@ void deleteChild(List_parent &P, List_child &C){
 //    }
 //    else {
 //        while (P != NULL) {
-//            if (maks < jumlahStasiun(P, R)) {
+//            if (maks < jumlahStasiun(P,R)) {
 //                maks = jumlahStasiun(P,R);
 //                Q = P;
 //            }
@@ -307,24 +307,11 @@ void deleteChild(List_parent &P, List_child &C){
 //    }
 //}
 
-//int jumlahStasiun(address_parent Q, List_relasi L){
-//    address_relasi P = firstChild(L);
+//int jumlahKereta(address_child Q, List_relasi L) {
+//    address_relasi P = firstRelasi(L);
 //    int i = 0;
-//    while (P!=NULL) {
-//        if (nama(namaparent(P))==nama_Parent(Q)) {
-//            i++;
-//        }
-//        P = next(P);
-//    }
-//    return i;
-//}
-//
-//int jumlahKereta(address_child Q, List_relasi L){
-//    // jumlah kereta dari suatu stasiun yang dituju
-//    address_relasi P = firstParent(L);
-//    int i = 0;
-//    while (P!=NULL) {
-//        if (info(nama_Child(P))== nama_Child(Q)) {
+//    while (P != NULL) {
+//        if(childList(child(P)) == nama_Parent(P)) {
 //            i++;
 //        }
 //        P = nextParent(P);
