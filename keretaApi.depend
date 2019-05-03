@@ -131,7 +131,7 @@
 	"child.h"
 	"relasi.h"
 
-1556651787 c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\namakereta.h
+1556901270 c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\namakereta.h
 	<iostream>
 	"parent.h"
 	"child.h"
@@ -142,7 +142,7 @@
 	<stdlib.h>
 	"relasi.h"
 
-1556651568 c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\relasi.h
+1556901387 c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\relasi.h
 	<iostream>
 	<stdlib.h>
 	"child.h"
@@ -152,4 +152,7 @@
 
 1556651568 source:c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\relasi.cpp
 	"relasi.h"
+
+1556901674 source:c:\users\mangrio\documents\github\tubes_std_adhitya-aldira-hardy-komang-triolascarya\namakereta.cpp
+	"namakereta.h"
 

@@ -23,4 +23,6 @@ void stasiunTerbanyak(List_child L, List_relasi R);
 void keretaTerbanyak(List_parent L, List_relasi R);
 int jumlahStasiun(address_parent Q, List_relasi L);
 int jumlahKereta(address_child Q, List_relasi L);
+bool cekDulu (address_child C, address_parent P, List_relasi L);
+void duakaliStasiun (List_parent P, List_relasi R, List_child C);
 #endif // NAMAKERETA_H_INCLUDED

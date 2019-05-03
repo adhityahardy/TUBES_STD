@@ -163,7 +163,7 @@ void printAll (List_parent P, List_child C){
         R = firstRelasi(childList(Q));
         if(R != NULL){
             while(R != NULL){
-                cout<<nama_Child(child(R))<<endl;
+                cout<<nama_Child(child(R));
                 R = nextRelasi(R);
             }
         } else {
@@ -317,4 +317,15 @@ void deleteChild(List_parent &P, List_child &C){
 //        P = nextParent(P);
 //    }
 //    return i;
+//}
+
+//bool cekDulu(address_child C, address_parent P, List_relasi L) {
+//    address_relasi U = firstRelasi(L);
+//    while (U != NULL) {
+//        if((child(U) == C) && ((U) == P)) {
+//           return true;
+//           }
+//           U = nextRelasi(U);
+//    }
+//    return false;
 //}

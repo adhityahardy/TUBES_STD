@@ -5,12 +5,14 @@
 #include <stdlib.h>
 
 #include "child.h"
+#
 
 using namespace std;
 
 #define nextRelasi(R) R->nextRelasi
 #define firstRelasi(L) L.firstRelasi
 #define child(R) R->child
+
 
 typedef struct elmlist_relasi *address_relasi;
 
